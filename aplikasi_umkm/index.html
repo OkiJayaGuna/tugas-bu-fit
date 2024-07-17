@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Keuangan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aplikasi Keuangan</h1>
+    </header>
+    <nav>
+        <button onclick="showSection('pencatatan-penjualan')">Pencatatan Penjualan</button>
+        <button onclick="showSection('manajemen-inventaris')">Manajemen Inventaris</button>
+        <button onclick="showSection('laporan')">Laporan Keuangan</button>
+    </nav>
+    <main>
+        <section id="pencatatan-penjualan" class="hidden">
+            <iframe src="pencatatan-penjualan/index.html" frameborder="0"></iframe>
+        </section>
+        <section id="manajemen-inventaris" class="hidden">
+            <iframe src="manajemen-inventaris/index.html" frameborder="0"></iframe>
+        </section>
+        <section id="laporan" class="hidden">
+            <iframe src="laporan/index.html" frameborder="0"></iframe>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

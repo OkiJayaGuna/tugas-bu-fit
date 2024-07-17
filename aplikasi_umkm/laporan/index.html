@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Keuangan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <h1>Laporan Keuangan</h1>
+    
+    <form id="report-form">
+        <label for="report-period">Periode Laporan:</label>
+        <select id="report-period" required>
+            <option value="harian">Harian</option>
+            <option value="bulanan">Bulanan</option>
+        </select>
+        <button type="submit">Tampilkan Laporan</button>
+    </form>
+
+    <div id="report-output">
+        <h2>Laporan Pendapatan</h2>
+        <div id="daily-report" class="hidden">
+            <h3>Rincian Pendapatan Harian</h3>
+            <div id="daily-report-list"></div>
+        </div>
+        <div id="monthly-report" class="hidden">
+            <h3>Rincian Pendapatan Bulanan</h3>
+            <div id="monthly-report-list"></div>
+        </div>
+        <h2>Laporan Barang Masuk</h2>
+        <div id="inventory-report" class="hidden">
+            <h3>Rincian Barang Masuk</h3>
+            <div id="inventory-report-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
